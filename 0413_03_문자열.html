@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      //charAt()문자열의 지정된 인덱스(위치)에 있는 문자 반환
+      let x = "Hello"
+      let y = x.charAt(1);
+      console.log(y);
+      //let z = x.concat(y);//두개의 문자열을 연결
+      //let z = x.indexOf("hello");//문자열에서 값이 처음나타나는 위치 반환 값이 없으면 -1반환 대소문자 구분된다.
+      //let z = x.lastindexOf("1");//문자열에서 지정된 값이 마지막으로 나타나는 인덱스(위치)를 반환 값이 없으면 -1반환 대소문자구분됨.
+      //let z = x.length;
+      //let z = x.padStart(6, "a");//지정된 길이가 될때까지 지정된 문자열로 채워줌
+      //let z = x.padend(10,"a");
+      //let z = x.repeat(3);//지정된값으로 복사본생성
+      //let z = x.replace("Hello", "world");
+      //let z = x.search("h");
+      //let z = x.slice(3);//지정된 문자열의 앞에서부터 0으로시작
+      //let z = x.slice(-3,-2);//지정된 문자열의 끝에서부터 1부터시작
+      let str ="aaa bb cc ddd";
+      let z = str.split(" ,")
+      //let srt1 = z.join("*")
+      //z.pop();
+      //z.push("new")
+      //z.shift();
+      //z.unshift("new");
+      //z.splice(1,0,"new");
+      //z.splice(1,1,"new","add");
+      let str2 = z.slice(2);//cc bbb
+      let str3 = z.slice(1,2);//bb
+      let str4 = str2.concat(str3);
+      str4.sort().reverse();
+      let txt = "Hello world"
+      //let txt1 = txt.substr(0,2);//지정된 인덱스번호에서 지정된 값으로 문자열을 추출
+      //let txt1 = txt.substr(0,3);
+      //let txt1 = txt.substr(-3,2);
+      //let txt1 = txt.substring(0,3);
+      //let txt1 = txt.substring(-1)://start가 0보다 작으면 인덱스 0부터 시작
+      //let txt1 = txt.toLowerCase();
+      //let t ="                          Hello world                    ";
+      //let txt1 = t.trim();
+      console.log(txt1);
+      
+    </script>
+</head>
+<body>
+   <p id="demo1"></p>
+   <p id="demo2"></p>
+   <script>
+    let t = "          Hello world          ";
+    //let result = t.trim();
+    document.getElementById("demo1").innerHTML = t;
+    document.getElementById("demo2").innerHTML = result;
+   </script>
+</body>
+</html>
